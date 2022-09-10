@@ -2,6 +2,9 @@
   "name": "print-shop",
   "version": "0.1.0",
   "private": true,
+  "devDependencies": {
+    "standardx": "^7.0.0"
+  },
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
@@ -26,12 +29,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -42,6 +39,29 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ]
+    },
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "env": {
+      "es6": true
+    }
+  },
+  "standardx": {
+    "env": [
+      "jest",
+      "node"
+    ],
+    "globals": [
+      "boom"
     ]
   }
 }
